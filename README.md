@@ -13,16 +13,16 @@ It additionnally installs
 
 ## Quick start-up guide
 
-Run container using [DockerHub image](https://hub.docker.com/r/yannael/kafka-sparkstreaming-cassandra)
+Run container using [DockerHub image](https://hub.docker.com/r/ilovelili/kafka-sparkstreaming-cassandra)
 
 ```bash
-docker run -p 4040:4040 -p 8888:8888 -p 23:22 -ti --privileged yannael/kafka-sparkstreaming-cassandra
+docker run -p 4040:4040 -p 8888:8888 -p 23:22 -ti --privileged ilovelili/kafka-sparkstreaming-cassandra
 ```
 
 Note that any changes you make in the notebook will be lost once you exit de container. In order to keep the changes, it is necessary put your notebooks in a folder on your host, that you share with the container, using for example
 
 ```bash
-docker run -v `pwd`:/home/guest/host -p 4040:4040 -p 8888:8888 -p 23:22 -ti --privileged yannael/kafka-sparkstreaming-cassandra
+docker run -v `pwd`:/home/guest/host -p 4040:4040 -p 8888:8888 -p 23:22 -ti --privileged ilovelili/kafka-sparkstreaming-cassandra
 ```
 
 Note:
