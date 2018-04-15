@@ -3,6 +3,8 @@
 #Check https://github.com/Yannael/brufence/blob/master/docker/streaming/README.md for details
 FROM centos:centos6
 
+LABEL maintainer="min ju<route666@live.cn>"
+
 RUN yum -y update;
 RUN yum -y clean all;
 
@@ -70,6 +72,3 @@ RUN chown guest:guest init_cassandra.cql
 #Add notebooks
 ADD notebooks /home/guest/notebooks
 RUN chown -R guest:guest notebooks
-
-
-
